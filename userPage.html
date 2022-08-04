@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>User Access Page</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/80703ebb6f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="displayBox">
+        <form id="userForm">
+
+            <h3>register form</h3>
+            <!-- user  name input field -->
+            <input type="text" required id="userName" placeholder="Enter Your Name" maxlength="15"
+                onkeydown="return /[a-z]/i.test(event.key)" /><br><span id="checkName"></span>
+
+            <!-- user email input field -->
+            <input type="email" id="userEmail" placeholder="Enter Your Email Id" required name="userEmail" /><br><span
+                id="checkMail"></span>
+
+            <!-- user password input field -->
+            <input type="password" id="userPassword" placeholder="Enter Your Password" maxlength="10" required />
+
+            <!-- user confirm password input field -->
+            <input type="password" id="confirmPassword" placeholder="Enter Your Confirm Password" maxlength="10"
+                required name="password" /><br><span id="checkPasswordMessage"></span><br>
+
+            <!-- user form submit field -->
+            <button id="registerSaveButton" onclick="registerFormData()">save</button>
+
+        </form>
+    </div>
+
+    <!-- user data store table -->
+    <div class="userDataTableBox">
+        <table border="2px solid black" id="formDatatable">
+            <tr>
+                <th onclick="registerFormTableSort(0)">name <i class="fa-solid fa-up-down"></i></th>
+                <th onclick="registerFormTableSort(1)">email <i class="fa-solid fa-up-down"></i></th>
+                <th onclick="registerFormTableSort(2)">password <i class="fa-solid fa-up-down"></i></th>
+                <th onclick="registerFormTableSort(3)">Confirm password <i class="fa-solid fa-up-down"></i></th>
+                <th>Change</th>
+            </tr>
+        </table>
+    </div>
+    <script src="../javaScript/cache.js"></script>
+</body>
+
+</html>

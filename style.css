@@ -1,0 +1,218 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'poppins',sans-serif;
+}
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    /* text-transform: lowercase; */
+    font-size: 20px;
+    /* text-transform: capitalize; */
+}
+input:focus{
+    outline: none;
+}
+input:hover{
+    color: #892e9b;
+}
+
+label:hover{
+    
+    color: #892e9b;
+}
+.displayBox{
+    width: 550px;
+    height: 480px;
+    /* padding: 50px; */
+    padding-bottom: 90px;
+    padding-top: 20px;
+   margin-top: 130px;
+   margin-left: 620px;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    /* border: 1px solid  #892e9b; */
+    border-radius: 6px;
+    box-shadow: 0 0 19px #825f85;
+}
+input::placeholder{
+    /* font-family: 'Courier New', Courier, monospace; */
+    color: #892e9b;
+    opacity: 0.8;
+}
+#registerSaveButton{
+    margin-top: 40px;
+    justify-content: center;
+    /* margin-left: 200px; */
+    /* justify-content: center; */
+}
+button{
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(105, 141, 211);
+    color: white;
+    align-items: center;
+   text-transform: capitalize;
+}
+button:hover{
+    box-shadow: 0 0 5px #976ba0;
+}
+h3{
+    margin-bottom: 60px;
+}
+table,th,tr,td{
+    /* text-transform: capitalize; */
+    border: 1px solid #d694e4;  ;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 35px;
+    margin-top: 40px;
+    margin-left: 400px;
+    font-size: 20px;
+    margin-right: 600px;
+    width: 900px;  
+}
+th{
+    text-transform: capitalize;
+}
+table {
+    box-shadow: 0 0 19px #825f85; 
+      
+}
+#userEmail{
+    margin-top: 40px;
+}
+#userPassword{
+    margin-top: 40px;
+}
+#confirmPassword{
+    margin-top: 40px;
+}
+.clickName{
+    cursor: pointer;
+}
+.displayOff{
+    display: none;
+}
+.fa-solid
+{
+    font-size: 20px;
+    color: black;
+}
+.fa-regular{
+    font-size: 40px;
+}
+th:hover{
+    color: rgb(185, 108, 108);
+}
+#checkPasswordMessage{
+    
+    font-size: 13px;
+    float: left;
+    margin-left: 87px;
+    color: red;
+  }
+  #checkName{
+    font-size: 13px;
+   float: left;
+   margin-left: 87px;
+    color: red;
+  }
+  #checkMail{
+    font-size: 13px;
+    float: left;
+    margin-left: 87px;
+     color: red;
+  }
+@media only screen and (max-width:450px) {
+    .displayBox{
+        margin-top: 20px;
+        margin-left: 40px;
+        width: 260px;
+        height: 200px;
+        margin-bottom: -20px;
+      
+    }
+    body{
+        width: 100%;
+    }
+    input{
+        width: 200px;
+        font-size: 10px;
+    }
+  h3{
+    font-size: 16px;
+    margin-bottom: -1px;
+  }
+  table , th, tr,td{
+    width: 2px;
+    margin-left: 55px;
+    font-size: 10px;
+    height: 20px;
+    font-size: 10px;
+    padding: 5px;
+  }
+  table,td{
+    margin-left: 22px;
+    font-size: 5px;
+  }
+  button{
+    font-size: 9px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .fa-solid{
+    font-size: 10px;
+  }
+  #checkPassword{
+    font-size: 7px;
+    width: 90px;
+    float: left;
+    margin-left: 20px;
+  }
+  #registerSaveButton{
+    float: left;
+    justify-items: center;
+
+  }
+  #userEmail{
+    margin-top: 4px;
+    margin-left: -29px;
+}
+#userPassword{
+    margin-top: 4px;
+    margin-left: -25px;
+}
+#checkPasswordMessage{
+    margin-top: 4px;
+    font-size: 7px;
+    margin-left: 30px;
+}
+#registerSaveButton{
+    justify-content: center;
+    margin-left: 110px;
+    margin-top: -20px;
+     
+}
+#checkName{
+    margin-top: 4px;
+    font-size: 7px;
+    margin-left: 30px;
+}
+#confirmPassword{
+    margin-top: -20px;
+}
+
+#checkMail{
+    margin-top: 4px;
+    font-size: 7px;
+    margin-left: 30px;
+}
+
+}
